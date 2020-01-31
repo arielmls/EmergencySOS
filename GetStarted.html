@@ -22,88 +22,50 @@
        #checkBox {
            margin: 6px;
        }
+       #getStartedButton {
+         margin-top: 10px;
+       }
+
     </style>
   </head>
   <body>
-        <!-- <div >
-            <h4>EmergencySOS</h4>
-            <div class="ui placeholder segment">
-                <div class="ui two column very relaxed stackable grid">
-                  <div class="column">
-                    <div class="ui form">
-                      <div class="field">
-                        <label>Starting point</label>
-                        <div class="ui left icon input">
-                          <input type="text" placeholder="Choose starting point">
-                          <i class="map marker alternate icon"></i>
-                        </div>
-                      </div>
-                      <div class="ui checkbox">
-                        <input type="checkbox" tabindex="0" class="hidden">
-                        <label>Acknowledgement of risk</label>
-                      </div>
-                      <div class="ui blue submit button">Get Started</div>
-                    </div>
-                  </div>
-                  <div class="middle aligned column">
-                    <div class="ui big blue button">
-                        <i class="map pin icon"></i>
-                        Use Real Time Location
-                    </div>
-                  </div>
+    <div id="myPage">
+        <h1 id="pageHeader">
+            <img src="HeaderImage.png" id="HeaderImage">
+          </h1>
+        <div class="ui placeholder segment" id="options">
+          <div class="ui two column stackable center aligned grid">
+            <div class="ui vertical divider">Or</div>
+            <div class="middle aligned row">
+              <div class="column">
+                <div class="ui icon header">
+                  <i class="map marker alternate icon"></i>
+                  Starting Point
                 </div>
-                <div class="ui vertical divider">Or</div>
-             </div>
-
-        
-    
-        </div> -->
-        <div id="myPage">
-            <h1 id="pageHeader">
-                <img src="HeaderImage.png" id="HeaderImage">
-              </h1>
-            <div class="ui placeholder segment">
-                <div class="ui two column stackable center aligned grid">
-                  <div class="ui vertical divider">Or</div>
-                  <div class="middle aligned row">
-                    <div class="column">
-                      <div class="ui icon header">
-                        <i class="map marker alternate icon"></i>
-                        Starting Point
-                      </div>
-                      <div class="field">
-                        <div class="ui search">
-                          <div class="ui icon input">
-                            <input class="prompt" type="text" placeholder="Choose starting point">
-                            <i class="map marker alternate icon"></i>
-                          </div>
-                          <div class="ui checkbox" id="checkBox">
-                            <input type="checkbox" tabindex="0" class="hidden" >
-                            <label>Acknowledgement of risk</label>
-                          </div>
-                          <div class="ui blue submit button">Get Started</div>
-                          <div class="results"></div>
-                        </div>
-                      </div>
+                <div class="field">
+                  <div class="ui search">
+                    <div class="ui icon input">
+                      <input class="prompt" type="text" placeholder="Choose starting point">
+                      <i class="map marker alternate icon"></i>
                     </div>
-                    <div class="column">
-                      <div class="ui icon header">
-                        <i class="location arrow icon"></i>
-                        Use Real Time Location
-                        <br />
-                        <div class="ui checkbox" id="checkBox">
-                            <input type="checkbox" tabindex="0" class="hidden" >
-                            <label>Acknowledgement of risk</label>
-                          </div>
-                      </div>
-                      
-                      <div class="ui primary button">
-                        Get started
-                      </div>
-                    </div>
+                    <a class="ui blue button" id="getStartedButton" href="ShelterLocations.html">Get Started</a>
+                    <div class="results"></div>
                   </div>
                 </div>
               </div>
+              <div class="column">
+                <div class="ui icon header">
+                  <i class="location arrow icon"></i>
+                  Use Real Time Location
+                  <br />
+                </div>
+                
+                <a class="ui blue button" href="ShelterLocations.html">Get Started</a>
+              </div>
+            </div>
+          </div>
         </div>
+    </div>
+
   </body>
 </html>
